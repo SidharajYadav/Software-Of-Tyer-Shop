@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tire Shop Billing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Tire Shop Billing System</h1>
+  <img src="assets/shop-logo.png" alt="Shop Logo" width="100">
+
+  <div>
+    <h2>Customer Details</h2>
+    <input type="text" id="customer-name" placeholder="Customer Name">
+    <input type="text" id="customer-contact" placeholder="Contact Number">
+    <input type="text" id="customer-city" placeholder="City">
+  </div>
+
+  <div>
+    <h2>Tire Details</h2>
+    <select id="tire-brand">
+      <option value="Apollo">Apollo</option>
+      <option value="MRF">MRF</option>
+      <option value="CEAT">CEAT</option>
+      <option value="JK">JK</option>
+      <option value="Bridgestone">Bridgestone</option>
+      <option value="Michelin">Michelin</option>
+      <option value="Goodyear">Goodyear</option>
+    </select>
+    <input type="text" id="tire-size" placeholder="Size">
+    <input type="number" id="tire-quantity" placeholder="Total Number">
+    <input type="number" id="tire-price" placeholder="Price">
+    <button onclick="addTire()">Add Tire</button>
+  </div>
+
+  <button onclick="generateBill()">Generate Bill</button>
+  <button onclick="viewOwner()">Owner View</button>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@ function setupDatabase() {
         table.timestamps(true, true); // adds created_at and updated_at columns
       });
     }
-  });
+  }); 
 
   db.schema.hasTable('tires').then((exists) => {
     if (!exists) {
